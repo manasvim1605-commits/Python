@@ -1,7 +1,7 @@
-correct_pass="some_pass"
-not_found=True
-while not_found:
-    passw=input("Enter pass: ")
-    if passw == correct_pass:
-        not_found = False
-print ("Matched")
+file= open("file.txt","r")
+text=file.read()
+vowel=0
+for char in text:
+    if char in "AEIOUaeiou":
+        vowel=vowel+1
+print("No. of vowels are ",vowel)
